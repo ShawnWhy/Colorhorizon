@@ -121,14 +121,14 @@
   }
 
   .starlist{ 
-      border-radius:10px 2px 2px 10px;     
+      border-radius:2px 2px 2px 2px;     
       z-index:4;
       animation:starlist 1s both ;
-      transform-origin: left;
+      transform-origin: center;
   }
 
   @keyframes starlist{
-      0%{transform:translateX(0%)scaleY(.5)}
-      100%{transform:translatex(100%)scaleY(1)scaleX(100); opacity:1%}
+      0%{transform:translateX(0%)scale(1)}
+      100%{transform:translatex(100%)scale(30); opacity:1%}
   }
     
