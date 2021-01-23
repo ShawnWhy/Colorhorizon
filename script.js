@@ -28,7 +28,7 @@ var ColorArray=[
    
 ]
   
-$(document).on('click', event=>{
+$('.captors').on('click', event=>{
   if(ColorArray.length>0){
     createColorSky();
     var starArray=$('.captured')
@@ -265,6 +265,15 @@ var lakeArray=[];
 
     }
   }
+
+  $('.clearButton').on("click", event=>{
+    $(event.target).addClass('veil')
+    setTimeout(() => {
+      $('.skyLine2').html('');
+      $(event.target).removeClass('veil')
+      
+    }, 500);
+  })
 
 
 

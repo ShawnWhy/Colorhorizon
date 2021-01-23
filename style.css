@@ -131,4 +131,25 @@
       0%{transform:translateX(0%)scale(1)}
       100%{transform:translatex(100%)scale(30); opacity:1%}
   }
+
+  .clearButton{
+    position:fixed;
+    padding-left:5px;
+    border-radius:3px;
+    z-index:4;
+  }
+  .clearButton:hover{
+    width:100%;
+    background-color: skyblue;
+    opacity: 50%;
+  }
+
+  .veil{
+    animation:veil .5s both
+  }
+
+  @keyframes veil{
+    0%{height:1%}
+    100%{height:50%;opacity:1%}
+  }
     
